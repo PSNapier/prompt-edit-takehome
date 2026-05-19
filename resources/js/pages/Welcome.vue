@@ -322,7 +322,7 @@ const copy = async (s: Swatch) => {
                         role="img"
                         aria-label="Before PromptEdit placeholder"
                     >
-                        Before
+                        Before Image Placeholder
                     </div>
                 </figure>
 
@@ -367,7 +367,7 @@ const copy = async (s: Swatch) => {
                         role="img"
                         aria-label="After PromptEdit placeholder"
                     >
-                        After
+                        After Image Placeholder
                     </div>
                 </figure>
             </div>
@@ -392,7 +392,7 @@ const copy = async (s: Swatch) => {
                             role="img"
                             aria-label="Da Vinci Resolve plugin placeholder"
                         >
-                            Placeholder
+                            Image Placeholder
                         </div>
                         <figcaption class="sr-only">
                             Da Vinci Resolve plugin preview
@@ -416,7 +416,7 @@ const copy = async (s: Swatch) => {
                             role="img"
                             aria-label="Adobe Premier Pro plugin placeholder"
                         >
-                            Placeholder
+                            Image Placeholder
                         </div>
                         <figcaption class="sr-only">
                             Adobe Premier Pro plugin preview
