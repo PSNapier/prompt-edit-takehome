@@ -55,7 +55,7 @@ Built around a cold-traffic funnel (see `reference/audit_takeaway.md` for the se
 
 **Extras for review:** floating **Tweaks** panel (HSL sliders) to explore palette without redeploying — useful for feedback, not production UI.
 
-All CTAs and nav links are `#` placeholders. Copy tone matches existing brand voice; structure follows audit recommendations.
+All CTAs and nav links are `#` placeholders. Structure follows audit recommendations.
 
 ---
 
@@ -63,7 +63,7 @@ All CTAs and nav links are `#` placeholders. Copy tone matches existing brand vo
 
 **Inspiration:** Glass and color from Prompt Edit’s existing hero video; layout energy from **Epidemic Sound** and **Envato** (client-provided references). Goal: bold and approachable like those brands, but cinematic enough to sit beside **DaVinci Resolve** and **Premiere Pro**.
 
-**Color:** The hero video already leaned RYB primaries. Many AI products default to blue or chartreuse/pink; leaning into classic red–blue–yellow signals a more established, “pro tool” feel while staying distinct.
+**Color:** The hero video already leaned RYB primaries. Many AI products default to blue or altnerative colours such as chartreuse/pink; leaning into classic red–blue–yellow signals a more established, “pro tool” feel while staying distinct.
 
 **Information density:** The product is inherently dense. Instead of hiding that, the layout uses strong color blocks, clear hierarchy, and repeatable card patterns so scanning stays easy at a glance.
 
