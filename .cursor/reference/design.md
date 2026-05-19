@@ -1,8 +1,10 @@
 # Colours
 
 -hsl(3, 64%, 43%) Crimson
--hsl(197, 97%, 44%) Azure
--hsl(40, 77.90%, 46.10%) Amber
+-hsl(218, 97%, 35%) Azure
+-hsl(197, 97%, 44%) Cyan
+
+- hsl(40 84% 56%) Amber
 
 # Layout
 

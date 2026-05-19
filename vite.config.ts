@@ -15,9 +15,6 @@ export default defineConfig({
                 bunny('Instrument Sans', {
                     weights: [400, 500, 600],
                 }),
-                bunny('Instrument Serif', {
-                    weights: [400],
-                }),
             ],
         }),
         inertia(),
