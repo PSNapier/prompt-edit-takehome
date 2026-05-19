@@ -1,8 +1,8 @@
-Here's your recommended strategy based on everything. 🎯
+Here's the recommended strategy based on everything.
 
 ---
 
-## 🎯 Funnel Strategy
+## Funnel Strategy
 
 This is a **cold traffic, single-offer funnel**. The visitor arrives knowing nothing about PromptEdit, so the page needs to do all the trust-building and convincing from scratch. The job of the page is linear:
 
@@ -12,7 +12,7 @@ No wandering. No sprawling template library detours before they've even bought i
 
 ---
 
-## 📐 Recommended Layout (Top to Bottom)
+## Recommended Layout (Top to Bottom)
 
 | #   | Section                        | Purpose                                                                                                                                           |
 | --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ No wandering. No sprawling template library detours before they've even bought i
 
 ---
 
-## 📣 CTA Strategy
+## CTA Strategy
 
 | CTA                             | Text                                                 | Placement                                               |
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------------------------- |
@@ -38,11 +38,11 @@ No wandering. No sprawling template library detours before they've even bought i
 | Secondary / downgrade           | **"Just want to try it? Start with a credit pack."** | Below the subscription pricing card                     |
 | Guarantee CTA                   | **"Start Creating Today — Risk Free"**               | Below guarantee block                                   |
 
-One CTA. One destination. Repeated with contextual framing as trust builds down the page. 🔁
+One CTA. One destination. Repeated with contextual framing as trust builds down the page.
 
 ---
 
-## 💲 Pricing Section Fix
+## Pricing Section Fix
 
 The current pricing is the biggest trust killer for cold traffic because it presents two options with confusing overlapping math. Recommended restructure:
 
@@ -62,7 +62,7 @@ This anchors the subscription as the default and frames the credit pack as a les
 
 ---
 
-## ✂️ What Gets Cut
+## What Gets Cut
 
 | Current Element                                  | Recommendation                                                                       |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------ |

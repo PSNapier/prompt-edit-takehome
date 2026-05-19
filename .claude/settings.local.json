@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\arjon\\\\Web Dev\\\\2025\\\\Herd\\\\prompt-edit-takehome\\\\.claude\\\\skills\\\\caveman\" \"C:\\\\Users\\\\arjon\\\\Web Dev\\\\2025\\\\Herd\\\\prompt-edit-takehome\\\\.claude\\\\skills\\\\grill-plan\" \"C:\\\\Users\\\\arjon\\\\Web Dev\\\\2025\\\\Herd\\\\prompt-edit-takehome\\\\.claude\\\\reference\")"
+    ]
+  }
+}

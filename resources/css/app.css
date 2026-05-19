@@ -14,7 +14,6 @@
         'Noto Color Emoji';
 
     --font-rock-salt: 'Rock Salt', cursive;
-
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
@@ -88,6 +87,17 @@
             'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
             'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
             'Noto Color Emoji';
+    }
+
+    .crosshatch {
+        background-image:
+            repeating-linear-gradient(
+                45deg,
+                color-mix(in srgb, currentColor 20%, transparent) 0,
+                color-mix(in srgb, currentColor 20%, transparent) 1px,
+                transparent 0,
+                transparent 20px
+            );
     }
 }
 

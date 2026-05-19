@@ -1,8 +1,8 @@
-Here's a thorough, no-opinion audit broken down by category. 📋
+Here's a thorough, no-opinion audit broken down by category.
 
 ---
 
-## 🏗️ Page Structure & Layout
+## Page Structure & Layout
 
 | Section                      | What's There                                                                                                                          |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,19 +21,19 @@ Here's a thorough, no-opinion audit broken down by category. 📋
 
 ---
 
-## ✍️ Copy Audit
+## Copy Audit
 
 ### Headline Inventory
 
 | Location                 | Headline / Subhead                                                              |
-| ------------------------ | ------------------------------------------------------------------------------- | ---------------- |
-| Page title tag           | "Prompt Edit                                                                    | Exclusive Offer" |
+| ------------------------ | ------------------------------------------------------------------------------- |
+| Page title tag           | "Prompt Edit \| Exclusive Offer"                                                |
 | Meta description         | "the most affordable AI marketplace on earth"                                   |
 | Main H1 equivalent       | "Prompt Edit — The most affordable AI marketplace featuring the best AI tools." |
 | Templates section        | "Here's a More Detailed Look at our Content Creator Templates Library"          |
 | SFX section              | "Hear the Difference Sound Makes"                                               |
 | Sound effects H1         | "Access 60,000+ Sound Effects Today!"                                           |
-| Listen CTA section       | "Listen to Some of Our Sounds 🔊"                                               |
+| Listen CTA section       | "Listen to Some of Our Sounds"                                                  |
 | Subscription fit section | "A Subscription to PromptEdit.com...is for you if..."                           |
 | Unlimited usage section  | "UNLIMITED Downloads & UNLIMITED Usage"                                         |
 | FAQ section              | "Commonly Asked Questions"                                                      |
@@ -62,7 +62,7 @@ Here's a thorough, no-opinion audit broken down by category. 📋
 
 ---
 
-## 🎨 UI / Visual Audit
+## UI / Visual Audit
 
 ### Images
 
@@ -109,7 +109,7 @@ Here's a thorough, no-opinion audit broken down by category. 📋
 
 ---
 
-## 💰 Pricing Section Audit
+## Pricing Section Audit
 
 | Plan                 | Price  | What You Get                                                                                                                                                                                            |
 | -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,7 +123,7 @@ Here's a thorough, no-opinion audit broken down by category. 📋
 
 ---
 
-## 📋 FAQ Audit
+## FAQ Audit
 
 | Question                                           | Answer Quality                                      |
 | -------------------------------------------------- | --------------------------------------------------- |
