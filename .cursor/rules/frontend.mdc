@@ -1,0 +1,17 @@
+---
+description: 'Frontend instructions.'
+alwaysApply: true
+---
+
+This is a Laravel 13 Vue Tailwind project. ALWAYS use Tailwind.
+
+If you have to make something custom, then break it down into reusable Tailwind-esque classes that we can reuse.
+
+Adhere to frontend best practices.
+
+- Account for accessibility
+- Utilize proper ARIA labels
+- Account for keyboard and voice navigation
+- Always design a mobile version alongside the desktop version
+
+This is a site mock-up only, use only placeholder '#' links.
