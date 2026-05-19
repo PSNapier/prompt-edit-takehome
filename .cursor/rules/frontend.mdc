@@ -15,3 +15,5 @@ Adhere to frontend best practices.
 - Always design a mobile version alongside the desktop version
 
 This is a site mock-up only, use only placeholder '#' links.
+
+NEVER use border-radius! Square corners only.

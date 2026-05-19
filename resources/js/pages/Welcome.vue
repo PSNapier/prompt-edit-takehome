@@ -44,24 +44,80 @@ const featureRowStagger = 'ml-[10.75rem]';
 const featureRows = [
     {
         cards: [
-            { id: 'r1a', label: 'Smart trim' },
-            { id: 'r1b', label: 'Scene detect' },
-            { id: 'r1c', label: 'Color match' },
-            { id: 'r1d', label: 'Audio sync' },
-            { id: 'r1e', label: 'B-roll suggest' },
-            { id: 'r1f', label: 'Caption draft' },
-            { id: 'r1g', label: 'Export presets' },
+            {
+                id: 'r1a',
+                title: 'Smart trim',
+                description: 'Cut dead air and keep the pace tight.',
+            },
+            {
+                id: 'r1b',
+                title: 'Scene detect',
+                description: 'Split clips where the story shifts.',
+            },
+            {
+                id: 'r1c',
+                title: 'Color match',
+                description: 'Balance shots without manual grading.',
+            },
+            {
+                id: 'r1d',
+                title: 'Audio sync',
+                description: 'Line up dialogue and music in one pass.',
+            },
+            {
+                id: 'r1e',
+                title: 'B-roll suggest',
+                description: 'Drop in cutaways that fit the beat.',
+            },
+            {
+                id: 'r1f',
+                title: 'Caption draft',
+                description: 'First-pass subtitles ready to polish.',
+            },
+            {
+                id: 'r1g',
+                title: 'Export presets',
+                description: 'Ship platform-ready files from one click.',
+            },
         ],
     },
     {
         cards: [
-            { id: 'r2a', label: 'Rough cut' },
-            { id: 'r2b', label: 'Beat map' },
-            { id: 'r2c', label: 'LUT preview' },
-            { id: 'r2d', label: 'Voice isolate' },
-            { id: 'r2e', label: 'Reframe 9:16' },
-            { id: 'r2f', label: 'Hook finder' },
-            { id: 'r2g', label: 'Batch render' },
+            {
+                id: 'r2a',
+                title: 'Rough cut',
+                description: 'Assembly edit from raw footage fast.',
+            },
+            {
+                id: 'r2b',
+                title: 'Beat map',
+                description: 'Cuts land on the downbeat every time.',
+            },
+            {
+                id: 'r2c',
+                title: 'LUT preview',
+                description: 'Try looks before you commit a grade.',
+            },
+            {
+                id: 'r2d',
+                title: 'Voice isolate',
+                description: 'Pull clean VO out of noisy rooms.',
+            },
+            {
+                id: 'r2e',
+                title: 'Reframe 9:16',
+                description: 'Repack horizontal edits for vertical.',
+            },
+            {
+                id: 'r2f',
+                title: 'Hook finder',
+                description: 'Surface the strongest open in seconds.',
+            },
+            {
+                id: 'r2g',
+                title: 'Batch render',
+                description: 'Queue exports while you keep editing.',
+            },
         ],
     },
 ] as const;
@@ -133,7 +189,7 @@ const copy = async (s: Swatch) => {
                 >
                     <a
                         href="#"
-                        class="shrink-0 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--c-hero-fg))] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                        class="shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--c-hero-fg))] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                     >
                         <AppLogoIcon
                             class="size-9 text-[hsl(var(--c-hero-fg))]"
@@ -146,20 +202,20 @@ const copy = async (s: Swatch) => {
                         <Link
                             v-if="$page.props.auth.user"
                             :href="dashboard()"
-                            class="inline-block rounded-sm border border-[hsl(var(--c-hero-fg)/0.4)] px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
+                            class="inline-block border border-[hsl(var(--c-hero-fg)/0.4)] px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
                         >
                             Dashboard
                         </Link>
                         <template v-else>
                             <Link
                                 :href="login()"
-                                class="inline-block rounded-sm border border-transparent px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg)/0.4)]"
+                                class="inline-block border border-transparent px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg)/0.4)]"
                             >
                                 Log in
                             </Link>
                             <Link
                                 :href="register()"
-                                class="inline-block rounded-sm border border-[hsl(var(--c-hero-fg)/0.4)] px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
+                                class="inline-block border border-[hsl(var(--c-hero-fg)/0.4)] px-5 py-1.5 leading-normal text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
                             >
                                 Register
                             </Link>
@@ -187,13 +243,13 @@ const copy = async (s: Swatch) => {
                     >
                         <a
                             href="#"
-                            class="inline-block rounded-sm border border-[hsl(var(--c-hero-fg))] bg-[hsl(var(--c-hero-fg))] px-6 py-2 text-sm font-medium text-black hover:bg-[hsl(var(--c-hero-fg)/0.9)]"
+                            class="inline-block border border-[hsl(var(--c-hero-fg))] bg-[hsl(var(--c-hero-fg))] px-6 py-2 text-sm font-medium text-black hover:bg-[hsl(var(--c-hero-fg)/0.9)]"
                         >
                             Get started
                         </a>
                         <a
                             href="#"
-                            class="inline-block rounded-sm border border-[hsl(var(--c-hero-fg)/0.4)] px-6 py-2 text-sm font-medium text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
+                            class="inline-block border border-[hsl(var(--c-hero-fg)/0.4)] px-6 py-2 text-sm font-medium text-[hsl(var(--c-hero-fg))] hover:border-[hsl(var(--c-hero-fg))]"
                         >
                             Learn more
                         </a>
@@ -255,55 +311,65 @@ const copy = async (s: Swatch) => {
             class="bg-[hsl(var(--c-ba-bg))] text-[hsl(var(--c-ba-fg))]"
             aria-labelledby="before-after-heading"
         >
-            <div class="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:py-20">
-                <h2
-                    id="before-after-heading"
-                    class="text-center text-3xl font-semibold tracking-tight sm:text-4xl"
+            <div
+                class="mx-auto flex min-h-[32rem] max-w-6xl flex-col items-center justify-between px-6 sm:min-h-[36rem] sm:px-10"
+            >
+                <figure
+                    class="mx-auto flex w-full max-w-md flex-col sm:max-w-lg"
                 >
-                    See the difference
-                </h2>
-                <p
-                    class="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-[hsl(var(--c-ba-fg)/0.8)] sm:text-lg"
-                >
-                    Placeholder for before-and-after creative output. Swap with
-                    real comparison assets from your funnel.
-                </p>
+                    <div
+                        class="flex aspect-[4/3] w-full items-center justify-center border border-t-0 border-[hsl(var(--c-ba-fg)/0.35)] bg-[hsl(var(--c-ba-bg))] text-sm font-medium text-[hsl(var(--c-ba-fg)/0.7)]"
+                        role="img"
+                        aria-label="Before PromptEdit placeholder"
+                    >
+                        Before
+                    </div>
+                </figure>
 
                 <div
-                    class="mt-12 grid gap-8 md:grid-cols-2"
-                    role="group"
-                    aria-label="Before and after comparison"
-                >
-                    <figure class="flex flex-col">
-                        <div
-                            class="flex aspect-[4/3] items-center justify-center rounded-sm border border-[hsl(var(--c-ba-fg)/0.35)] bg-transparent text-sm font-medium text-[hsl(var(--c-ba-fg)/0.7)]"
-                            role="img"
-                            aria-label="Before PromptEdit placeholder"
-                        >
-                            Before
-                        </div>
-                        <figcaption
-                            class="mt-3 text-center text-sm font-medium text-[hsl(var(--c-ba-fg))]"
-                        >
-                            Before PromptEdit
-                        </figcaption>
-                    </figure>
+                    class="h-12 w-px shrink-0 bg-[hsl(var(--c-ba-fg)/0.45)] sm:h-16"
+                    aria-hidden="true"
+                />
 
-                    <figure class="flex flex-col">
-                        <div
-                            class="flex aspect-[4/3] items-center justify-center rounded-sm border border-[hsl(var(--c-ba-fg)/0.35)] bg-transparent text-sm font-medium text-[hsl(var(--c-ba-fg)/0.7)]"
-                            role="img"
-                            aria-label="After PromptEdit placeholder"
+                <div
+                    class="relative z-10 w-full bg-[hsl(var(--c-ba-bg))] py-8 text-center sm:py-10"
+                >
+                    <div
+                        class="mx-auto inline-block max-w-2xl bg-[hsl(var(--c-ba-bg))] px-8 sm:px-12"
+                    >
+                        <h2
+                            id="before-after-heading"
+                            class="text-3xl font-semibold tracking-tight sm:text-4xl"
                         >
-                            After
-                        </div>
-                        <figcaption
-                            class="mt-3 text-center text-sm font-medium text-[hsl(var(--c-ba-fg))]"
+                            See the difference
+                        </h2>
+                        <p
+                            class="mt-4 text-base leading-relaxed text-[hsl(var(--c-ba-fg)/0.8)] sm:text-lg"
                         >
-                            After PromptEdit
-                        </figcaption>
-                    </figure>
+                            Placeholder for before-and-after creative output.
+                            Swap with real comparison assets from your funnel.
+                        </p>
+                    </div>
                 </div>
+
+                <div
+                    class="flex shrink-0 flex-col items-center text-[hsl(var(--c-ba-fg)/0.45)]"
+                    aria-hidden="true"
+                >
+                    <div class="h-12 w-px shrink-0 bg-current sm:h-16" />
+                </div>
+
+                <figure
+                    class="mx-auto mb-0 flex w-full max-w-md flex-col sm:max-w-lg"
+                >
+                    <div
+                        class="flex aspect-[4/3] w-full items-center justify-center border border-b-0 border-[hsl(var(--c-ba-fg)/0.35)] bg-[hsl(var(--c-ba-bg))] text-sm font-medium text-[hsl(var(--c-ba-fg)/0.7)]"
+                        role="img"
+                        aria-label="After PromptEdit placeholder"
+                    >
+                        After
+                    </div>
+                </figure>
             </div>
         </section>
 
@@ -409,23 +475,31 @@ const copy = async (s: Swatch) => {
                                 <!--
                                     Polaroid I-Type proportions: outer
                                     3.5" x 4.2" (aspect 35/42). Side/top
-                                    borders ~5.7% of width, bottom border
-                                    ~21.4% of height, photo area ~3.1"
-                                    square inside.
+                                    borders ~5.7% of width; square photo;
+                                    bottom strip holds title + copy.
                                 -->
                                 <figure
-                                    class="flex aspect-[35/42] flex-col bg-[hsl(var(--c-feature-card))] px-[5.7%] pt-[5.7%] pb-[21.4%] shadow-sm"
+                                    class="flex aspect-[35/42] flex-col bg-[hsl(var(--c-feature-card))] px-[5.7%] pt-[5.7%] text-neutral-900 shadow-sm"
                                     :class="featureRowHeight"
                                 >
                                     <div
                                         role="img"
-                                        class="flex aspect-square w-full items-center justify-center bg-neutral-700 px-2 text-center text-xs font-medium text-neutral-400"
-                                        :aria-label="`${card.label} placeholder`"
+                                        class="aspect-square w-full shrink-0 bg-neutral-300"
+                                        :aria-label="`${card.title} preview placeholder`"
+                                    ></div>
+                                    <figcaption
+                                        class="flex min-h-0 flex-1 flex-col items-start justify-start gap-1 pb-2 text-left"
                                     >
-                                        {{ card.label }}
-                                    </div>
-                                    <figcaption class="sr-only">
-                                        {{ card.label }} feature preview
+                                        <h3
+                                            class="relative z-10 -translate-x-[5%] -translate-y-[40%] font-rock-salt text-xl leading-tight font-bold sm:text-2xl"
+                                        >
+                                            {{ card.title }}
+                                        </h3>
+                                        <p
+                                            class="font-sans text-[10px] leading-snug text-neutral-600 sm:text-xs"
+                                        >
+                                            {{ card.description }}
+                                        </p>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -444,7 +518,7 @@ const copy = async (s: Swatch) => {
                 v-if="!panelOpen"
                 type="button"
                 @click="panelOpen = true"
-                class="pointer-events-auto rounded-full bg-neutral-900 px-4 py-2 text-xs font-medium text-white shadow-lg ring-1 ring-white/10 hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                class="pointer-events-auto bg-neutral-900 px-4 py-2 text-xs font-medium text-white shadow-lg ring-1 ring-white/10 hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                 aria-label="Open color tweaks panel"
             >
                 Tweaks
@@ -454,14 +528,14 @@ const copy = async (s: Swatch) => {
                 v-else
                 role="dialog"
                 aria-label="Color tweaks"
-                class="pointer-events-auto w-full max-w-sm rounded-lg border border-white/10 bg-neutral-900/95 p-4 text-xs text-white shadow-2xl backdrop-blur sm:w-80"
+                class="pointer-events-auto w-full max-w-sm border border-white/10 bg-neutral-900/95 p-4 text-xs text-white shadow-2xl backdrop-blur sm:w-80"
             >
                 <header class="mb-3 flex items-center justify-between gap-2">
                     <h3 class="font-medium tracking-wide uppercase">Tweaks</h3>
                     <button
                         type="button"
                         @click="panelOpen = false"
-                        class="rounded p-1 text-white/70 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                        class="p-1 text-white/70 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                         aria-label="Close tweaks panel"
                     >
                         <svg
@@ -484,14 +558,14 @@ const copy = async (s: Swatch) => {
                     <li
                         v-for="s in swatches"
                         :key="s.key"
-                        class="rounded-md bg-white/5 p-2"
+                        class="bg-white/5 p-2"
                     >
                         <div
                             class="mb-1.5 flex items-center justify-between gap-2"
                         >
                             <div class="flex items-center gap-2">
                                 <span
-                                    class="inline-block size-4 rounded border border-white/20"
+                                    class="inline-block size-4 border border-white/20"
                                     :style="{
                                         backgroundColor: `hsl(${s.h} ${s.s}% ${s.l}%)`,
                                     }"
@@ -502,7 +576,7 @@ const copy = async (s: Swatch) => {
                             <button
                                 type="button"
                                 @click="copy(s)"
-                                class="rounded bg-white/10 px-2 py-0.5 font-mono text-[10px] hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                                class="bg-white/10 px-2 py-0.5 font-mono text-[10px] hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                                 :aria-label="`Copy HSL value for ${s.label}`"
                             >
                                 {{ copied === s.key ? 'copied' : 'copy' }}
